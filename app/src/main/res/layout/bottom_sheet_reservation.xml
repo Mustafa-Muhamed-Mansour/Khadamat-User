@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/relative_bottom_sheet_reservation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/img_close_bottom_sheet_reservation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"
+            android:layout_margin="@dimen/_5sdp"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_user"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/txt_name_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_below="@id/img_user"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/txt_location_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_below="@id/txt_name_user"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/txt_phone_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_below="@id/txt_location_user"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/txt_email_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_below="@id/txt_phone_user"
+            android:layout_centerHorizontal="true"
+            />
+
+        <LinearLayout
+            android:id="@+id/linear_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/txt_email_user"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:textColorHint="@color/black"
+            app:boxCornerRadiusTopStart="@dimen/_10sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+            app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+            android:layout_margin="@dimen/_3sdp"
+            >
+
+            <EditText
+                android:id="@+id/edit_day"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="The Day"
+                android:textSize="@dimen/_17ssp"
+                android:textColor="@color/black"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/img_day"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:src="@drawable/day"
+                android:layout_margin="@dimen/_3sdp"
+                />
+
+        </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/linear_time"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_below="@id/linear_day"
+           android:layout_margin="@dimen/_5sdp"
+           android:gravity="center"
+           >
+
+           <com.google.android.material.textfield.TextInputLayout
+               android:id="@+id/time"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+               android:textColorHint="@color/black"
+               app:boxCornerRadiusTopStart="@dimen/_10sdp"
+               app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+               app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+               app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+               android:layout_margin="@dimen/_3sdp"
+               >
+
+               <EditText
+                   android:id="@+id/edit_time"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:hint="The Time"
+                   android:textSize="@dimen/_17ssp"
+                   android:textColor="@color/black"
+                   />
+
+           </com.google.android.material.textfield.TextInputLayout>
+
+           <ImageView
+               android:id="@+id/img_time"
+               android:layout_width="@dimen/_32sdp"
+               android:layout_height="@dimen/_32sdp"
+               android:src="@drawable/time"
+               android:layout_margin="@dimen/_3sdp"
+               />
+
+       </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@null"
+            android:background="@drawable/button_create_account"
+            android:layout_below="@id/linear_time"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:text="تأكيد الحجز"
+            android:textSize="@dimen/_17ssp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:padding="@dimen/_10sdp"
+            />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/relative_bottom_sheet_review"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/r_v_review"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/linear_review"
+            />
+
+        <LinearLayout
+            android:id="@+id/linear_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/send_review"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="@color/black"
+                android:layout_margin="@dimen/_3sdp"
+                app:boxCornerRadiusTopStart="@dimen/_10sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                >
+
+                <EditText
+                    android:id="@+id/edit_opinion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Send My Opinion"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/black"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/img_send"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/send"
+                android:layout_margin="@dimen/_3sdp"
+                android:padding="@dimen/_5sdp"
+                />
+
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/loading_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+</layout>

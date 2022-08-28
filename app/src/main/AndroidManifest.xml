@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.khadamat">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/user_services"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/user_services"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KhadamatUser">
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
