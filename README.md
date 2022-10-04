@@ -1,4 +1,4 @@
-# Khadamat-User
+# It allows the user to book with more than one employee in various fields on any day the user wants and at any hour. The user also wants to know if the reservation request has been accepted or rejected with the of the reason for rejection, as well as knowing the opinions of the users of the employee who wants to book with him, whether positive or negative, and he can add his opinion on Employee X.
 
 ## Screen shot
 
