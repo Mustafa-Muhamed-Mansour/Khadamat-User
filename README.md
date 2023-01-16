@@ -1,6 +1,9 @@
-# It allows the user to book with more than one employee in various fields on any day the user wants and at any hour. The user also wants to know if the reservation request has been accepted or rejected with the of the reason for rejection, as well as knowing the opinions of the users of the employee who wants to book with him, whether positive or negative, and he can add his opinion on Employee X.
+# Graduation Project
 
-## Screen shot
+
+## It allows the user to book with more than one employee in various fields on any day the user wants and at any hour. The user also wants to know if the reservation request has been accepted or rejected with the of the reason for rejection, as well as knowing the opinions of the users of the employee who wants to book with him, whether positive or negative, and he can add his opinion on Employee X.
+
+### Screen shot
 
 <img src = "https://user-images.githubusercontent.com/53982895/187567658-38c608fc-ebcb-49fe-aeef-9c26d257e757.png" width = "200" height = "400"> <img src = "https://user-images.githubusercontent.com/53982895/187567710-508e4e57-58ec-4aaf-90ef-ee6067eb0ace.png" width = "200" height = "400">
 <img src = "https://user-images.githubusercontent.com/53982895/187567750-0ad1cebb-c1d8-44dc-9061-4a5bc34a8806.png" width = "200" height = "400"> <img src = "https://user-images.githubusercontent.com/53982895/187567588-059cfcbd-a0e2-4b0d-9431-62350a011790.png" width = "200" height = "400">
